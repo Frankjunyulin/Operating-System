@@ -1,13 +1,9 @@
 # Operating-System
 
-This is an implementation of an operating system for the Operating Systems course, [CPEN 331](
-https://sites.google.com/site/cpen331/), at the University of British Columbia.
 
 ## Overview
 This is a project that involved implementing various portions of an operating system. The main goal was to gain a strengthened understanding of concurrency, synchronization, virtual memory, system calls, and file systems.
 
-The [course](https://courses.students.ubc.ca/cs/main?pname=subjarea&tname=subjareas&req=3&dept=CPEN&course=331) that this project was associated with describes the key aspects of the course as: 
-Operating systems, their design and their implementation. Process concurrency, synchronization, communication and scheduling. Device drivers, memory management, virtual memory, file systems, networking and security.
 
 ## Implemented Features
 ### Concurrency
@@ -34,24 +30,14 @@ The implementation of lseek() can be found in /kern/syscall/fsyscall.c
 The implementation of close() can be found in /kern/syscall/fsyscall.c
 #### dup2()
 The implementation of dup2() can be found in /kern/syscall/fsyscall.c
-#### chdir()
-The implementation of chdir() can be found in /kern/syscall/fsyscall.c
-#### __getcwd()
-The implementation of __getcwd() can be found in /kern/syscall/fsyscall.c
+
 
 ### Process System Calls
-#### System Call: getpid()
-The implementation of getpid() can be found in /kern/syscall/psyscall.c
 #### System Call: fork()
 The implementation of fork() can be found in /kern/syscall/psyscall.c
 #### System Call: execv()
 The implementation of execv() can be found in /kern/syscall/psyscall.c
-#### System Call: _exit()
-The implementation of _exit() can be found in /kern/syscall/psyscall.c
-#### System Call: kill_curthread()
-The implementation of kill_curthread() can be found in [TODO: fill in]
-#### System Call: sbrk()
-The implementation of sbrk() can be found in [TODO: fill in]
+
 
 ### Virtual Memory
 OS161 has implemented virtual memory. TODO: Talk about TLB, page tables, MMU, swap.
@@ -99,10 +85,3 @@ bmake depend
 bmake
 bmake install
 ```
-
-## Overview
-This is a project that involved implementing various portions of an operating system. The main goal was to gain a strengthened understanding of concurrency, synchronization, virtual memory, system calls, and file systems.
-The course that this project was associated with describes the key aspects of the course as: Operating systems, their design and their implementation. Process concurrency, synchronization, communication and scheduling. Device drivers, memory management, virtual memory, file systems, networking and security.
-
-
-### Features
